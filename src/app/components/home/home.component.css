@@ -1,0 +1,6 @@
+input.ng-invalid,
+input.ng-invalid:focus-visible,
+input.ng-invalid:active,
+input.ng-invalid:hover {
+  border: 1px solid red;
+}

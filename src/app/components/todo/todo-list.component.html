@@ -1,0 +1,16 @@
+<div class="todo-list">
+  <form [formGroup]="formTodo">
+    <label for="content">New todo : </label>
+    <input type="text" id="content" formControlName="content" />
+    <button (click)="addTodo()">Add todo</button>
+  </form>
+
+  <div class="list">
+    <ul>
+      <li *ngFor="let todo of todos$ | async">{{ todo.content }}</li>
+    </ul>
+  </div>
+
+  {{ formTodo.value | json }}
+  <router-outlet></router-outlet>
+</div>
