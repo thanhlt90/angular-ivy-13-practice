@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './components/home/home.component';
 import { CommonModule } from '@angular/common';
 import { HomeChildComponent } from './components/child.component';
+import { RegisterFormComponent } from './components/dynamic-form/register-form.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,12 @@ import { HomeChildComponent } from './components/child.component';
     SharedModule,
     FormsModule,
   ],
-  declarations: [AppComponent, HomeComponent, HomeChildComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HomeChildComponent,
+    RegisterFormComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -6,7 +6,7 @@ import { SharedService } from '../../services/shared.service';
 @Component({
   selector: 'app-home',
   template: `
-  <form [formGroup]="contactForm">
+  <!-- <form [formGroup]="contactForm">
     <label for="name">Name: </label>
     <input type="text" formControlName="name" [class.alert]="name.dirty"/>
     <label for="name">Age: </label>
@@ -22,9 +22,10 @@ import { SharedService } from '../../services/shared.service';
   <p>Form Status: {{ contactForm.status }}</p>
   <p>Form Status: {{ contactForm.value | json }}</p>
 
-  <button (click)="changeRepoStr()">Update home child</button>
+  <button (click)="changeRepoStr()">Update home child</button> -->
 
   <!-- <app-home-child [formValue]="contactForm.value"></app-home-child> -->
+  Home page
   `,
   styleUrls: ['home.component.css'],
 })
